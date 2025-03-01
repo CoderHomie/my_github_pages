@@ -57,6 +57,12 @@ padding: 60px;
 text-align: center;
 position: relative;
 }
+section img {
+    max-width: 100%; /* Ensure the image doesn't exceed the section's width */
+    height: auto; /* Maintain the aspect ratio */
+    border-radius: 8px; /* Optional: rounding corners of the image */
+    margin-bottom: 20px; /* Space below the image */
+}
 h1 {
 font-size: 3em;
 display: flex;
@@ -74,6 +80,7 @@ gap: 15px;
 position: relative;
 }
 p {
+    font-size: 1.5em;
     color: #008ba3;
 }
 footer {
@@ -89,7 +96,7 @@ background-color: #282828;
     height: auto; /* Maintain aspect ratio */
 }
 .gradient-heading {
-    background: linear-gradient(to right, #c89c2d, #037eaf); /* Gradient colors */
+    background: linear-gradient(to right, #ffd501, #037eaf); /* Gradient colors */
     background-clip: text; /* Standard version */
     -webkit-background-clip: text; /* Clip the background to the text */
     color: transparent; /* Make the text color transparent */
