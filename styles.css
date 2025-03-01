@@ -1,0 +1,106 @@
+body {
+background-color: #181717;
+color: #ffffff;
+font-family: "Poppins", sans-serif;
+scrollbar-width: thin;
+scrollbar-color: #00bcd4 #282828;
+}
+::-webkit-scrollbar {
+width: 10px;
+}
+::-webkit-scrollbar-track {
+background: #282828;
+}
+::-webkit-scrollbar-thumb {
+background: #00bcd4;
+border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+background: #008ba3;
+}
+header {
+text-align: center;
+padding: 20px;
+}
+nav {
+position: fixed;
+top: 50%;
+left: 20px;
+transform: translateY(-50%);
+}
+nav ul {
+list-style: none;
+padding: 0;
+display: flex;
+flex-direction: column;
+gap: 15px;
+justify-content: center; /* Center the items horizontally */
+}
+nav ul li {
+display: block;
+}
+nav ul li a {
+color: #00bcd4;
+text-decoration: none;
+font-weight: bold;
+padding: 10px 15px;
+background: #282828;
+border-radius: 5px;
+display: block;
+transition: background 0.3s;
+}
+nav ul li a:hover {
+background: #008ba3;
+}
+section {
+padding: 60px;
+text-align: center;
+position: relative;
+}
+h1 {
+font-size: 3em;
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 15px;
+position: relative;
+}
+h2 {
+font-size: 2.5em;
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 15px;
+position: relative;
+}
+p {
+    color: #008ba3;
+}
+footer {
+text-align: center;
+padding: 20px;
+background-color: #282828;
+}
+.top-right-image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 10%; /* Adjust the size of the image */
+    height: auto; /* Maintain aspect ratio */
+}
+.gradient-heading {
+    background: linear-gradient(to right, #c89c2d, #037eaf); /* Gradient colors */
+    background-clip: text; /* Standard version */
+    -webkit-background-clip: text; /* Clip the background to the text */
+    color: transparent; /* Make the text color transparent */
+    font-size: 3rem; /* Adjust font size */
+    font-weight: bold; /* Optional for styling */
+}
+.gradient-text {
+    background: linear-gradient(to right, #b3d5df, #014864); /* Gradient colors */
+    background-clip: text; /* Standard version */
+    -webkit-background-clip: text; /* Clip the background to the text */
+    color: transparent; /* Make the text color transparent */
+    font-size: 3rem; /* Adjust font size */
+    font-weight: bold; /* Optional for styling */
+}
