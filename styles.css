@@ -101,9 +101,7 @@ p {
     color: #008ba3;
 }
 
-a {
-    color: #ffdb4b; /* Set link color to a blue shade */
-}
+
 
 /* Optional: Change color when hovering over the link */
 a:hover {
