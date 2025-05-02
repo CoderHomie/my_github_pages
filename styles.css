@@ -37,55 +37,56 @@ img {
     margin-top: 20px; /* Add some space between header and image */
 }
 
-/* Side nav container */
-.side-nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 200px;        /* full width when expanded */
-    height: 100%;
-    background-color: #333;
-    transform: translateX(-180px);  /* initially mostly hidden */
-    transition: transform 0.3s ease;
-    z-index: 1000;
-  }
-  
-  /* Slight visible strip */
-  .side-nav::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: -20px;
-    width: 20px;
-    height: 100%;
-    background-color: #333;
-  }
-  
-  /* Expand on hover */
-  .side-nav:hover {
-    transform: translateX(0);
-  }
-  
-  /* Menu items */
-  .side-nav ul {
-    list-style: none;
-    padding: 20px;
-    margin: 0;
-  }
-  
-  .side-nav ul li {
-    margin: 20px 0;
-  }
-  
-  .side-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-  }
-  
-  .side-nav ul li a:hover {
-    text-decoration: underline;
-  }
+/* Side nav using <nav> */
+nav.side-nav {
+position: fixed;
+top: 0;
+left: 0;
+width: 200px;
+height: 100%;
+background-color: #222;
+transform: translateX(-180px); /* mostly hidden, 20px visible */
+transition: transform 0.3s ease;
+z-index: 1000;
+}
+
+/* Slight visible tab */
+nav.side-nav::before {
+content: "";
+position: absolute;
+top: 0;
+right: -20px;
+width: 20px;
+height: 100%;
+background-color: #222;
+cursor: pointer;
+}
+
+/* Slide out on hover */
+nav.side-nav:hover {
+transform: translateX(0);
+}
+
+/* Nav links */
+nav.side-nav ul {
+list-style: none;
+padding: 20px;
+margin: 0;
+}
+
+nav.side-nav ul li {
+margin: 20px 0;
+}
+
+nav.side-nav ul li a {
+color: white;
+text-decoration: none;
+font-size: 18px;
+}
+
+nav.side-nav ul li a:hover {
+text-decoration: underline;
+}
 
 section {
     padding: 60px;
