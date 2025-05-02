@@ -37,34 +37,55 @@ img {
     margin-top: 20px; /* Add some space between header and image */
 }
 
-nav {
+/* Side nav container */
+.side-nav {
     position: fixed;
     top: 0;
     left: 0;
+    width: 200px;        /* full width when expanded */
     height: 100%;
-    width: 5%;
-    background-color: transparent;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    background-color: #333;
+    transform: translateX(-180px);  /* initially mostly hidden */
+    transition: transform 0.3s ease;
     z-index: 1000;
-}
-
-nav a {
+  }
+  
+  /* Slight visible strip */
+  .side-nav::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -20px;
+    width: 20px;
+    height: 100%;
+    background-color: #333;
+  }
+  
+  /* Expand on hover */
+  .side-nav:hover {
+    transform: translateX(0);
+  }
+  
+  /* Menu items */
+  .side-nav ul {
+    list-style: none;
+    padding: 20px;
+    margin: 0;
+  }
+  
+  .side-nav ul li {
+    margin: 20px 0;
+  }
+  
+  .side-nav ul li a {
     color: white;
     text-decoration: none;
-    padding: 10px 20px;
-    width: 100%;
-    text-align: center;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
-}
-
-/* Hover effect */
-nav a:hover {
-    background-color: #444;
-    box-shadow: 0 0 100% rgba(255, 255, 255, 0.5);
-}
+    font-size: 18px;
+  }
+  
+  .side-nav ul li a:hover {
+    text-decoration: underline;
+  }
 
 section {
     padding: 60px;
